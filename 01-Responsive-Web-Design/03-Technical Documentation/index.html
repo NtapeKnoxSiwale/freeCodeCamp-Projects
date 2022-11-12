@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kotlin Technical documentation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <nav id="navbar">
-        <header id="title">Kotlin Documentation</header>
-        <ul>
-            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
-            <li><a class="nav-link" href="#Install_Kotlin">Install Kotlin</a></li>
-            <li><a class="nav-link" href="#Learn_Kotlin_fundamentals">Learn Kotlin fundamentals</a></li>
-            <li><a class="nav-link" href="#Kotlin_for_Android">Kotlin for Android</a></li>
-            <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
-            <li><a class="nav-link" href="#Package_Definition_And_Imports">Package Definition And Imports</a></li>
-            <li><a class="nav-link" href="#Program_Entry_Point">Program Entry Point</a></li>
-            <li><a class="nav-link" href="#Print_To_The_Standard_Output">Print To The Standard Output</a></li>
-            <li><a class="nav-link" href="#Functions">Functions</a></li>
-            <li><a class="nav-link" href="#Variables">Variables</a></li>
-            <li><a class="nav-link" href="#Creating_Classes_And_Instances">Creating Classes And Instances</a></li>
-            <li><a class="nav-link" href="#String_Templates">String Templates</a></li>
-            <li><a class="nav-link" href="#For_Loop">For Loop</a></li>
-            <li><a class="nav-link" href="#While_Loop">While Loop</a></li>
-            <li><a class="nav-link" href="#Comments">Comments</a></li>
-            <li><a class="nav-link" href="#References">References</a></li>
-        </ul>
+        <div class="logo-container">
+            <header id="logo">Kotlin Docs</header>
+            <div class="search-container">
+                <svg id="search-icon" width="25" height="25" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M28.425 26.7031L20.3094 18.5875C21.5688 16.9594 22.25 14.9688 22.25 12.875C22.25 10.3688 21.2719 8.01875 19.5031 6.24687C17.7344 4.475 15.3781 3.5 12.875 3.5C10.3719 3.5 8.01562 4.47812 6.24687 6.24687C4.475 8.01562 3.5 10.3688 3.5 12.875C3.5 15.3781 4.47812 17.7344 6.24687 19.5031C8.01562 21.275 10.3688 22.25 12.875 22.25C14.9688 22.25 16.9563 21.5688 18.5844 20.3125L26.7 28.425C26.7238 28.4488 26.7521 28.4677 26.7832 28.4806C26.8143 28.4935 26.8476 28.5001 26.8813 28.5001C26.9149 28.5001 26.9482 28.4935 26.9793 28.4806C27.0104 28.4677 27.0387 28.4488 27.0625 28.425L28.425 27.0656C28.4488 27.0418 28.4677 27.0136 28.4806 26.9825C28.4935 26.9514 28.5001 26.918 28.5001 26.8844C28.5001 26.8507 28.4935 26.8174 28.4806 26.7863C28.4677 26.7552 28.4488 26.7269 28.425 26.7031ZM17.825 17.825C16.5 19.1469 14.7437 19.875 12.875 19.875C11.0062 19.875 9.25 19.1469 7.925 17.825C6.60313 16.5 5.875 14.7437 5.875 12.875C5.875 11.0062 6.60313 9.24688 7.925 7.925C9.25 6.60313 11.0062 5.875 12.875 5.875C14.7437 5.875 16.5031 6.6 17.825 7.925C19.1469 9.25 19.875 11.0062 19.875 12.875C19.875 14.7437 19.1469 16.5031 17.825 17.825Z"
+                        fill="#B125EA" />
+                </svg>
+                <input class="search-bar" type="text" placeholder="Search here..." />
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <span class="nav-headings first-menu-heading">Getting Started</span>
+                <li>
+                    <a class="nav-link" href="#Introduction_to_Kotlin">Introduction to Kotlin</a>
+                </li>
+                <li><a class="nav-link" href="#Install_Kotlin">Install Kotlin</a></li>
+                <li>
+                    <a class="nav-link" href="#Learn_Kotlin_fundamentals">Learn Kotlin fundamentals</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Kotlin_for_Android">Kotlin for Android</a>
+                </li>
+                <span class="nav-headings next-heading">Overview</span>
+                <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+                <li>
+                    <a class="nav-link" href="#Package_Definition_And_Imports">Package Definition And Imports</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Program_Entry_Point">Program Entry Point</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Print_To_The_Standard_Output">Print To The Standard Output</a>
+                </li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li>
+                    <a class="nav-link" href="#Creating_Classes_And_Instances">Creating Classes And Instances</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#String_Templates">String Templates</a>
+                </li>
+                <li><a class="nav-link" href="#For_Loop">For Loop</a></li>
+                <li><a class="nav-link" href="#While_Loop">While Loop</a></li>
+                <li><a class="nav-link" href="#Comments">Comments</a></li>
+                <li><a class="nav-link" href="#References">References</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main id="main-doc">
-
         <section class="main-section" id="Getting_Started">
             <header>Getting Started</header>
             <article>
                 <p>
-                    <a href="https://kotlinlang.org/">Kotlin</a> is a modern but already mature programming language aimed to make developers happier. It's concise, safe, interoperable with Java and other languages, and provides many ways to reuse code between multiple platforms for productive programming.
+                    <a href="https://kotlinlang.org/">Kotlin</a> is a modern but already
+                    mature programming language aimed to make developers happier. It's
+                    concise, safe, interoperable with Java and other languages, and
+                    provides many ways to reuse code between multiple platforms for
+                    productive programming.
                 </p>
-                <p>
-                    Pick it up to start building powerful applications!
-                </p>
+                <p>Pick it up to start building powerful applications!</p>
             </article>
         </section>
 
         <section class="main-section" id="Install_Kotlin">
             <header>Install Kotlin</header>
             <article>
-                <p>Kotlin is included in each <a href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA</a> and <a href="https://developer.android.com/studio">Studio release</a>.</p>
-                <p> Download and install one of these IDEs to start using Kotlin.</p>
+                <p>
+                    Kotlin is included in each
+                    <a href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA</a>
+                    and
+                    <a href="https://developer.android.com/studio">Studio release</a>.
+                </p>
+                <p>Download and install one of these IDEs to start using Kotlin.</p>
             </article>
         </section>
 
@@ -57,40 +99,104 @@
             <article>
                 <ul>
                     <li>
-                        If you're already familiar with one or more programming languages and want to learn Kotlin, start with these <a href="https://kotlinlang.org/docs/learning-materials-overview.html">learning materials</a>.
+                        If you're already familiar with one or more programming languages
+                        and want to learn Kotlin, start with these
+                        <a href="https://kotlinlang.org/docs/learning-materials-overview.html">learning materials</a>.
                     </li>
                     <li>
-                        If Kotlin is your first programming language, we recommend starting with the Atomic Kotlin book or signing up for the free Kotlin Basics track on JetBrains Academy.
+                        If Kotlin is your first programming language, we recommend
+                        starting with the Atomic Kotlin book or signing up for the free
+                        Kotlin Basics track on JetBrains Academy.
                     </li>
                 </ul>
             </article>
         </section>
 
         <section class="main-section" id="Kotlin_for_Android">
-            <header>Kotlin for Android </header>
+            <header>Kotlin for Android</header>
             <article>
-                <p>Android mobile development has been Kotlin-first since Google I/O in 2019.</p>
-            <p>Using Kotlin for Android development, you can benefit from:</p>
-            <ul>
-                <li><strong>code combined with greater readability.</strong> Spend less time writing your code and working to understand the code of others.</li>
-                <li><strong>Mature language and environment.</strong> Since its creation in 2011, Kotlin has developed continuously, not only as a language but as a whole ecosystem with robust tooling. Now it's seamlessly integrated in Android Studio and is actively used by many companies for developing Android applications.</li>
-                <li><strong>Kotlin support in Android Jetpack and other libraries.</strong> <ahref="https://developer.android.com/kotlin/ktx">KTX extensions</a> add Kotlin language features, such as coroutines, extension functions, lambdas, and named parameters, to existing Android libraries.</li>
-                <li><strong>Interoperability with Java.</strong> You can use Kotlin along with the Java programming language in your applications without needing to migrate all your code to Kotlin.</li>
-                <li><strong>Support for multiplatform development.</strong> You can use Kotlin for developing not only Android but also <a href="https://kotlinlang.org/lp/mobile/"> iOS</a>, backend, and web applications. Enjoy the benefits of sharing the common code among the platforms.</li>
-                <li><strong>Code safety.</strong> Less code and better readability lead to fewer errors. The Kotlin compiler detects these remaining errors, making the code safe.</li>
-                <li><strong>Easy learning.</strong> Kotlin is very easy to learn, especially for Java developers.</li>
-                <li><strong>Big community.</strong> Kotlin has great support and many contributions from the community, which is growing all over the world. According to Google, over 60% of the top 1000 apps on the Play Store use Kotlin.</li>
-            </ul>
-            <p>Many startups and Fortune 500 companies have already developed Android applications using Kotlin - see the list at <a href="https://developer.android.com/kotlin">the Google website for Kotlin developers</a>.</p>
-            <p>If you want to start using Kotlin for Android development, read <a href="https://developer.android.com/kotlin/get-started">Google's recommendation for getting started with Kotlin on Android</a>.</p>
+                <p>
+                    Android mobile development has been Kotlin-first since Google I/O in
+                    2019.
+                </p>
+                <p>Using Kotlin for Android development, you can benefit from:</p>
+                <ul>
+                    <li>
+                        <strong>code combined with greater readability.</strong> Spend
+                        less time writing your code and working to understand the code of
+                        others.
+                    </li>
+                    <li>
+                        <strong>Mature language and environment.</strong> Since its
+                        creation in 2011, Kotlin has developed continuously, not only as a
+                        language but as a whole ecosystem with robust tooling. Now it's
+                        seamlessly integrated in Android Studio and is actively used by
+                        many companies for developing Android applications.
+                    </li>
+                    <li>
+                        <strong>Kotlin support in Android Jetpack and other libraries.</strong>
+                        <a href="https://developer.android.com/kotlin/ktx">KTX extensions</a>
+                        add Kotlin language features, such as coroutines, extension
+                        functions, lambdas, and named parameters, to existing Android
+                        libraries.
+                    </li>
+                    <li>
+                        <strong>Interoperability with Java.</strong> You can use Kotlin
+                        along with the Java programming language in your applications
+                        without needing to migrate all your code to Kotlin.
+                    </li>
+                    <li>
+                        <strong>Support for multiplatform development.</strong> You can
+                        use Kotlin for developing not only Android but also
+                        <a href="https://kotlinlang.org/lp/mobile/"> iOS</a>, backend, and
+                        web applications. Enjoy the benefits of sharing the common code
+                        among the platforms.
+                    </li>
+                    <li>
+                        <strong>Code safety.</strong> Less code and better readability
+                        lead to fewer errors. The Kotlin compiler detects these remaining
+                        errors, making the code safe.
+                    </li>
+                    <li>
+                        <strong>Easy learning.</strong> Kotlin is very easy to learn,
+                        especially for Java developers.
+                    </li>
+                    <li>
+                        <strong>Big community.</strong> Kotlin has great support and many
+                        contributions from the community, which is growing all over the
+                        world. According to Google, over 60% of the top 1000 apps on the
+                        Play Store use Kotlin.
+                    </li>
+                </ul>
+                <p>
+                    Many startups and Fortune 500 companies have already developed
+                    Android applications using Kotlin - see the list at
+                    <a href="https://developer.android.com/kotlin">the Google website for Kotlin developers</a>.
+                </p>
+                <p>
+                    If you want to start using Kotlin for Android development, read
+                    <a href="https://developer.android.com/kotlin/get-started">Google's recommendation for getting
+                        started with Kotlin on
+                        Android</a>.
+                </p>
             </article>
         </section>
 
         <section class="main-section" id="Basic_Syntax">
             <header>Basic Syntax</header>
             <article>
-                <p>This is a collection of basic syntax elements with examples. At the end of every section, you'll find a link to a detailed description of the related topic.</p>
-                <p>You can also learn all the Kotlin essentials with the free <a href="https://hyperskill.org/join/fromdocstoJetSalesStat?redirect=true&next=/tracks/18&_gl=1*1wsv80b*_ga*MTgxMDgzNTU2Mi4xNjY0NDk2NDQ2*_ga_9J976DJZ68*MTY2NTA3MDE5MS42LjEuMTY2NTA3MjY0NS4zMi4wLjA.&_ga=2.55404587.1260063676.1665068023-1810835562.1664496446">Kotlin Basics track</a> on JetBrains Academy.</p>
+                <p>
+                    This is a collection of basic syntax elements with examples. At the
+                    end of every section, you'll find a link to a detailed description
+                    of the related topic.
+                </p>
+                <p>
+                    You can also learn all the Kotlin essentials with the free
+                    <a
+                        href="https://hyperskill.org/join/fromdocstoJetSalesStat?redirect=true&next=/tracks/18&_gl=1*1wsv80b*_ga*MTgxMDgzNTU2Mi4xNjY0NDk2NDQ2*_ga_9J976DJZ68*MTY2NTA3MDE5MS42LjEuMTY2NTA3MjY0NS4zMi4wLjA.&_ga=2.55404587.1260063676.1665068023-1810835562.1664496446">Kotlin
+                        Basics track</a>
+                    on JetBrains Academy.
+                </p>
             </article>
         </section>
 
@@ -100,26 +206,32 @@
                 <p>Package specification should be at the top of the source file.</p>
                 <code>package my.demo
                     import kotlin.text.*
-                    // ...
-                </code>
-                <p>It is not required to match directories and packages: source files can be placed arbitrarily in the file system.</p>
-                <p>See <a href="https://kotlinlang.org/docs/packages.html">Packages</a>.</p>
+                    // ... </code>
+                <p>
+                    It is not required to match directories and packages: source files
+                    can be placed arbitrarily in the file system.
+                </p>
+                <p>
+                    See
+                    <a href="https://kotlinlang.org/docs/packages.html">Packages</a>.
+                </p>
             </article>
-            </section>
+        </section>
 
-            <section class="main-section" id="Program_Entry_Point">
-                <header>Program Entry Point</header>
-                <article>
+        <section class="main-section" id="Program_Entry_Point">
+            <header>Program Entry Point</header>
+            <article>
                 <p>An entry point of a Kotlin application is the main function.</p>
-                <code>fun main() {
-                        println("Hello world!")
-                    }
-                </code>
-                <p>Another form of main accepts a variable number of String arguments.</p>
-                <code>fun main(args: Array<String>) {
-                        println(args.contentToString())
-                    }
-                </code>
+                <code>fun main() { 
+                    println("Hello world!") 
+                } </code>
+                <p>
+                    Another form of main accepts a variable number of String arguments.
+                </p>
+                <code>fun main(args: Array < String > ) {
+                     println(args.contentToString())
+            }
+          </code>
             </article>
         </section>
 
@@ -127,14 +239,15 @@
             <header>Print To The Standard Output</header>
             <article>
                 <p>print prints its argument to the standard output.</p>
-                <code>print("Hello")
-                    print("world!")
-                </code>
+                <code>print("Hello") 
+                    print("world!") </code>
 
-                <p>println prints its arguments and adds a line break, so that the next thing you print appears on the next line.</p>
-                <code>println("Hello world!")
-                    println(42)
-                </code>
+                <p>
+                    println prints its arguments and adds a line break, so that the next
+                    thing you print appears on the next line.
+                </p>
+                <code>println("Hello world!") 
+                    println(42) </code>
             </article>
         </section>
 
@@ -143,28 +256,32 @@
             <article>
                 <p>A function with two Int parameters and Int return type.</p>
                 <code>fun sum(a: Int, b: Int): Int {
-                    return a+b
-                }</code>
+                     return a + b 
+                    }</code>
 
-                <p>A function body can be an expression. Its return type is inferred.</p>
-                <code>fun sum(a: Int, b: Int) = a + b
-                </code>
+                <p>
+                    A function body can be an expression. Its return type is inferred.
+                </p>
+                <code>fun sum(a: Int, b: Int) = a + b </code>
 
                 <p>A function that returns no meaningful value.</p>
                 <code>fun printSum(a: Int, b: Int): Unit {
-                    println("sum of $a and $b is ${a + b}")
-                }</code>
+                        println("sum of $a and $b is ${a + b}")
+                    }</code>
             </article>
         </section>
 
         <section class="main-section" id="Variables">
             <header>Variables</header>
             <article>
-                <p>Read-only local variables are defined using the keyword val. They can be assigned a value only once.</p>
-                <code>val a: Int = 1  // immediate assignment
-                    val b = 2   // `Int` type is inferred
-                    val c: Int  // Type required when no initializer is provided
-                    c = 3       // deferred assignment
+                <p>
+                    Read-only local variables are defined using the keyword val. They
+                    can be assigned a value only once.
+                </p>
+                <code>val a: Int = 1 // immediate assignment 
+                    val b = 2 // `Int` type is inferred 
+                    val c: Int // Type required when no initializer is provided
+                    c = 3 // deferred assignment
                 </code>
             </article>
         </section>
@@ -176,44 +293,44 @@
                 <code>class Shape</code>
                 <p>Properties of a class can be listed in its declaration or body.</p>
                 <code>class Rectangle(var height: Double, var length: Double) {
-                    var perimeter = (height + length) * 2
-                }</code>
-                <p>The default constructor with parameters listed in the class declaration is available automatically.</p>
+                     var perimeter = (height + length) * 2 
+                    }</code>
+                <p>
+                    The default constructor with parameters listed in the class
+                    declaration is available automatically.
+                </p>
                 <code>val rectangle = Rectangle(5.0, 2.0)
                     println("The perimeter is ${rectangle.perimeter}")
-                </code>
-                <p>Inheritance between classes is declared by a colon (:). Classes are final by default; to make a class inheritable, mark it as open.</p>
-                <code>open class Shape
-
-                    class Rectangle(var height: Double, var length: Double): Shape() {
-                        var perimeter = (height + length) * 2
-                    }
-                </code>
+          </code>
+                <p>
+                    Inheritance between classes is declared by a colon (:). Classes are
+                    final by default; to make a class inheritable, mark it as open.
+                </p>
+                <code>open class Shape class Rectangle(var height: Double, var length:
+                Double): Shape() {
+                var perimeter = (height + length) * 2 
+            }
+          </code>
             </article>
         </section>
 
         <section class="main-section" id="String_Templates">
             <header>String Templates</header>
             <article>
-                <code>var a = 1
-                    // simple name in template:
-                    val s1 = "a is $a" 
-                    
-                    a = 2
-                    // arbitrary expression in template:
+                <code>var a = 1 // simple name in template:
+                    val s1 = "a is $a" a = 2 // arbitrary expression in template: 
                     val s2 = "${s1.replace("is", "was")}, but now is $a"
-                </code>
+          </code>
             </article>
         </section>
 
         <section class="main-section" id="For_Loop">
             <header>For Loop</header>
             <article>
-                <code>val items = listOf("apple", "banana", "kiwifruit")
-                    for (item in items) {
-                        println(item)
-                    }
-                </code>
+                <code>val items = listOf("apple", "banana", "kiwifruit") for (item in items) { 
+                println(item) 
+            }
+          </code>
             </article>
         </section>
 
@@ -221,39 +338,41 @@
             <header>While Loop</header>
             <article>
                 <code>val items = listOf("apple", "banana", "kiwifruit")
-                    var index = 0
-                    while (index < items.size) {
-                        println("item at $index is ${items[index]}")
-                        index++
-                    }
-                </code>
+                    var index = 0 while (index < items.size) { println("item at $index is ${items[index]}") index++ }
+          </code>
             </article>
         </section>
 
         <section class="main-section" id="Comments">
             <header>Comments</header>
             <article>
-                <p>Just like most modern languages, Kotlin supports single-line (or end-of-line) and multi-line (block) comments.</p>
+                <p>
+                    Just like most modern languages, Kotlin supports single-line (or
+                    end-of-line) and multi-line (block) comments.
+                </p>
                 <code>// This is an end-of-line comment
-
-                    /* This is a block comment
-                       on multiple lines. */
-                </code>
+                    /* This is a block comment on
+                    multiple lines. */
+          </code>
                 <p>Block comments in Kotlin can be nested.</p>
-                <code>/* The comment starts here
+                <code>/* The comment starts here 
                     /* contains a nested comment */
-                    and ends here. */
-                </code>
+                     and ends
+            here. */
+          </code>
             </article>
         </section>
 
         <section class="main-section" id="References">
             <header>References</header>
             <article>
-                <p>All the documentation in this page is taken from <a href="https://kotlinlang.org/docs/home.html">Kotlin</a></p>
+                <p>
+                    All the documentation in this page is taken from
+                    <a href="https://kotlinlang.org/docs/home.html">Kotlin</a>
+                </p>
             </article>
         </section>
-        
     </main>
 </body>
+
 </html>
