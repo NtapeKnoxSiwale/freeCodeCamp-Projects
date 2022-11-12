@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--html is the main root element-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CBU-Clinic COVID-19 Vaccine Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">
+          The Copperbelt University COVID-19 Vaccine Survey Form
+        </h1>
+        <p id="description">
+          Thank you for taking time to fill in the survey and taking the
+          vaccine.
+        </p>
+      </header>
+      <hr />
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name" for="name"> Name: </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required />
+        </div>
+        <div class="form-group">
+          <label id="sex" for="sex"> Sex: </label>
+          <label>
+            <input
+              name="sex"
+              value="male"
+              type="radio"
+              class="input-radio" />Male</label
+          >
+          <label>
+            <input
+              name="sex"
+              value="female"
+              type="radio"
+              class="input-radio" />Female</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label id="date-of-birth" for="date-of-birth"> Date Of Birth: </label>
+          <input
+            type="date"
+            id="date-of-birth"
+            class="form-control"
+            name="date-of-birth"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age: <span class="clue">(Optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="100"
+            class="form-control"
+            placeholder="Age" />
+        </div>
+
+        <div class="form-group">
+          <label id="id-passport" for="id-passport">
+            ID/Passport Number:
+          </label>
+          <input
+            type="number"
+            name="id-passport"
+            class="form-control"
+            placeholder="123456789"
+            id="id-passport" />
+        </div>
+
+        <div class="form-group">
+          <label id="phone-number-lable" for="phone-number">
+            Phone Number:
+          </label>
+          <input
+            id="phone-number"
+            type="tel"
+            name="phone-number"
+            class="form-control"
+            placeholder="Phone number"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label id="email-lable" for="email"> Email: </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group">
+          <label id="address" for="address"> Residential Address: </label>
+          <input
+            id="address"
+            type="text"
+            name="address"
+            class="form-control"
+            placeholder="Enter residential address here"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label id="provinces" for="provinces"> Province: </label>
+          <select name="provinces" id="dropdown" class="form-control">
+            <option disabled selected value>Select province</option>
+            <option value="central">Central</option>
+            <option value="copperbelt">Copperbelt</option>
+            <option value="eastern">Eastern</option>
+            <option value="luapula">Luapula</option>
+            <option value="lusaka">Lusaka</option>
+            <option value="muchinga">Muchinga</option>
+            <option value="north-western">North Western</option>
+            <option value="northen">Northern</option>
+            <option value="southern">Southern</option>
+            <option value="western">Western</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label id="health-facility" for="health-facility">
+            Health Facility:
+          </label>
+          <input
+            id="health-facility"
+            type="text"
+            class="form-control"
+            name="health-facility"
+            placeholder="Enter the health facility here"
+            required />
+        </div>
+
+        <div class="form-group">
+          <p>
+            Do you suffer from any of the following diseases?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input
+              name="prefer"
+              value="hiv-aids"
+              type="checkbox"
+              class="input-checkbox" />HIV/AIDS
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="heart-problems"
+              type="checkbox"
+              class="input-checkbox" />Heart Problems
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="cancer"
+              type="checkbox"
+              class="input-checkbox" />Cancer
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="sickle-cell-anaemia"
+              type="checkbox"
+              class="input-checkbox" />Sickle Cell Anaemia
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="chronic-respiratory-diseases"
+              type="checkbox"
+              class="input-checkbox" />Chronic Respiratory Diseases
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox" />Diabetic
+          </label>
+          <label
+            ><input
+              name="prefer"
+              value="epilepsy"
+              type="checkbox"
+              class="input-checkbox" />Epilepsy
+          </label>
+          <label
+            ><input
+              name="prefer"
+              value="diabetes-mellitus"
+              type="checkbox"
+              class="input-checkbox" />Diabetes Mellitus (Type II)</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="oral-diseases"
+              type="checkbox"
+              class="input-checkbox" />Oral Diseases</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="eye-diseases"
+              type="checkbox"
+              class="input-checkbox" />Eye Diseases</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="others"
+              type="checkbox"
+              class="input-checkbox" />Others
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any additional information concerning your health?</p>
+          <textarea
+            id="comments"
+            class="textarea"
+            name="comment"
+            placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
