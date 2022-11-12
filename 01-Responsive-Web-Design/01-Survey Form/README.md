@@ -1,10 +1,10 @@
 # freeCodeCamp-Survey-Form-Project
 
-The Live Demo: ![Survey Form](https://codepen.io/ntapeknoxsiwale/pen/dyvovmG)
+The Live Demo: [Survey Form Live Demo](https://codepen.io/ntapeknoxsiwale/pen/dyvovmG)
 
 A Survey form for the freeCodeCamp Project.
 
-## The Preview of the website:
+## Preview of the website:
 
 ![freecodecamp survey form preview image](/01-Responsive-Web-Design/01-Survey%20Form/survey-form-preview.png)
 
