@@ -1,20 +1,16 @@
-# freeCodeCamp-Survey-Form-Project
+# freeCodeCamp-Tribute-Page-Project
 
-The Copperbelt University Clinic COVID-19 Survey form for the freeCodeCamp Project.
+A Tribute Page for my father created for the freeCodeCamp Project.
 
-I was given a form to fill out before getting my COVID-19 shot and I figured it would be great if the survey process would be done online. To prevent the spread of COVID-19.
-
-This form is not affliated with the Copperbelt University Clinic.
-
-The Live Demo: [Survey Form Live Demo](https://codepen.io/ntapeknoxsiwale/pen/dyvovmG)
+The Live Demo: [Tribute Page Live Demo](https://codepen.io/ntapeknoxsiwale/pen/qBXXYBQ)
 
 ## Preview of the website:
 
-![freecodecamp survey form preview image](/01-Responsive-Web-Design/01-Survey%20Form/survey-form-preview.png)
+![freecodecamp survey form preview image](/01-Responsive-Web-Design/02-Tribute%20Page/tribute-page-preview.png)
 
 ## Copyright
 
-Copyright (c) 2022 by Ntapechela Knox Siwale (https://codepen.io/ntapeknoxsiwale/pen/dyvovmG)
+Copyright (c) 2022 by Ntapechela Knox Siwale (https://codepen.io/ntapeknoxsiwale/pen/qBXXYBQ)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
