@@ -1,6 +1,8 @@
 # freeCodeCamp-Survey-Form-Project
 
-The Copperbelt University Clinic COVID-19 Survey form for the freeCodeCamp Project. I was given a form to fill out before getting my COVID-19 shot and I figured it would be great if the survey process would be done online. That way we would not have to touch anything when we get to the Clinic. I create this due Pandemic COVID-19.
+The Copperbelt University Clinic COVID-19 Survey form for the freeCodeCamp Project. I was given a form to fill out before getting my COVID-19 shot and I figured it would be great if the survey process would be done online. That way we would not have to touch anything when we get to the Clinic.
+
+This form is not affliated with the Copperbelt University.
 
 The Live Demo: [Survey Form Live Demo](https://codepen.io/ntapeknoxsiwale/pen/dyvovmG)
 
