@@ -187,6 +187,10 @@ footer {
   padding-bottom: 1em;
 }
 
+footer .heart {
+  color: red;
+}
+
 .heart + a:hover {
   border-bottom: 3.5px solid white;
 }
