@@ -6,6 +6,8 @@ The Live Demo: [Technical Documentation Page Live Demo](https://codepen.io/ntape
 
 ## Preview of the website:
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1382f73-1609-4367-bb98-380c51ee72bb/deploy-status)](https://app.netlify.com/sites/kotlin-tech-doc/deploys)
+
 ![freecodecamp Tech Doc page preview image 1](/01-Responsive-Web-Design/03-Technical%20Documentation/techincal-doc-preview.png)
 ![freecodecamp Tech Doc page preview image 1](/01-Responsive-Web-Design/03-Technical%20Documentation/tech-doc-preview-mobile.png)
 

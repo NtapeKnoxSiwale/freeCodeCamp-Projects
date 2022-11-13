@@ -6,6 +6,8 @@ The Live Demo: [Hive Buiness System Landing Page Live Demo](https://codepen.io/n
 
 ## Preview of the website:
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b29c542-66d8-468e-8340-b6c04f911b8f/deploy-status)](https://app.netlify.com/sites/hive-landing-page/deploys)
+
 ![freecodecamp Landing page preview image 1](/01-Responsive-Web-Design/04-Landing%20Page/landing-page-preview.png)
 
 ## Copyright

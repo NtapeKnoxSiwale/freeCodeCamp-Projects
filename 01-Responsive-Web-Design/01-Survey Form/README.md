@@ -10,6 +10,8 @@ The Live Demo: [Survey Form Live Demo](https://codepen.io/ntapeknoxsiwale/pen/dy
 
 ## Preview of the website:
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a55a8c7d-7498-4a7c-afb1-8383ff6714b1/deploy-status)](https://app.netlify.com/sites/cbu-clinic-covid-form/deploys)
+
 ![freecodecamp survey form preview image](/01-Responsive-Web-Design/01-Survey%20Form/survey-form-preview.png)
 
 ## Copyright

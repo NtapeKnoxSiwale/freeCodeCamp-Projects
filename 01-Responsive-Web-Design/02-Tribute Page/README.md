@@ -6,6 +6,7 @@ The Live Demo: [Tribute Page Live Demo](https://codepen.io/ntapeknoxsiwale/pen/q
 
 ## Preview of the website:
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0480281d-336a-4c31-b51d-4c2920c57f0e/deploy-status)](https://app.netlify.com/sites/charles-siwale-tribute/deploys)
 ![freecodecamp survey form preview image](/01-Responsive-Web-Design/02-Tribute%20Page/tribute-page-preview.png)
 
 ## Copyright
