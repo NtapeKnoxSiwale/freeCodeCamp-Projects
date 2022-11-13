@@ -1,4 +1,4 @@
-# freeCodeCamp-Techincal-Documentation-Page-Project
+# freeCodeCamp-Personal-Porfolio-Project
 
 My Personal Porfolio created for the freeCodeCamp Project.
 
